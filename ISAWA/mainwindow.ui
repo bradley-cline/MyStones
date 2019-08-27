@@ -1,0 +1,3312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>357</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Calibri</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MyStones</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>10</y>
+      <width>640</width>
+      <height>350</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Corbel</family>
+     </font>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Pricing Calculator</string>
+     </attribute>
+     <widget class="QGroupBox" name="materialGroup">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>5</y>
+        <width>100</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Georgia</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+    color: rgb(239, 151, 9);
+}</string>
+      </property>
+      <property name="title">
+       <string>Material</string>
+      </property>
+      <widget class="QRadioButton" name="radioButton">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>27</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>10 KT</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_2">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>47</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>14 KT</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="radioButton_3">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>67</y>
+         <width>71</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>18 KT</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="weightGroup">
+      <property name="geometry">
+       <rect>
+        <x>119</x>
+        <y>5</y>
+        <width>100</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Georgia</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+    color: rgb(239, 151, 9);
+}</string>
+      </property>
+      <property name="title">
+       <string>Weight</string>
+      </property>
+      <widget class="QLineEdit" name="weight">
+       <property name="geometry">
+        <rect>
+         <x>15</x>
+         <y>32</y>
+         <width>71</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="weightLabel">
+       <property name="geometry">
+        <rect>
+         <x>25</x>
+         <y>64</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>7</pointsize>
+         <weight>50</weight>
+         <italic>true</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(254, 204, 102);</string>
+       </property>
+       <property name="text">
+        <string>( in DWT )</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="ctwGroup">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>5</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Georgia</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+    color: rgb(64, 128, 2);
+}
+</string>
+      </property>
+      <property name="title">
+       <string>CTW</string>
+      </property>
+      <widget class="QLabel" name="ctw">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>45</y>
+         <width>101</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(200, 250, 145);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="retailPGroup">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>5</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Georgia</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+    color: rgb(64, 128, 2);
+}
+</string>
+      </property>
+      <property name="title">
+       <string>Retail</string>
+      </property>
+      <widget class="QLabel" name="retailPrice">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>45</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(200, 250, 145);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="currentPGroup">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>5</y>
+        <width>120</width>
+        <height>90</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Georgia</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+    color: rgb(64, 128, 2);
+}
+</string>
+      </property>
+      <property name="title">
+       <string>Current</string>
+      </property>
+      <widget class="QLabel" name="currentPrice">
+       <property name="geometry">
+        <rect>
+         <x>9</x>
+         <y>45</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(200, 250, 145);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="stoneGroup">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>95</y>
+        <width>520</width>
+        <height>207</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Georgia</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+    color: rgb(239, 151, 9);
+}</string>
+      </property>
+      <property name="title">
+       <string>Stones</string>
+      </property>
+      <widget class="QComboBox" name="shape1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>104</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Round</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Princess</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Baguette</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Marquise</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pear</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Oval</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Trillion</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="shape2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>104</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Round</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Princess</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Baguette</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Marquise</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pear</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Oval</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Trillion</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="shape3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>104</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Round</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Princess</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Baguette</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Marquise</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pear</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Oval</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Trillion</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="shape4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>104</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Round</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Princess</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Baguette</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Marquise</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pear</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Oval</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Trillion</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="shape5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>104</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>11</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Round</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Princess</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Baguette</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Marquise</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pear</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Oval</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Trillion</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QSpinBox" name="quant1">
+       <property name="geometry">
+        <rect>
+         <x>132</x>
+         <y>50</y>
+         <width>48</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit { border: 1px solid gray }</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="maximum">
+        <number>500</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="quant2">
+       <property name="geometry">
+        <rect>
+         <x>132</x>
+         <y>80</y>
+         <width>48</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit { border: 1px solid gray }</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="maximum">
+        <number>500</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="quant3">
+       <property name="geometry">
+        <rect>
+         <x>132</x>
+         <y>110</y>
+         <width>48</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit { border: 1px solid gray }</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="maximum">
+        <number>500</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="quant4">
+       <property name="geometry">
+        <rect>
+         <x>132</x>
+         <y>140</y>
+         <width>48</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit { border: 1px solid gray }</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="maximum">
+        <number>500</number>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="quant5">
+       <property name="geometry">
+        <rect>
+         <x>132</x>
+         <y>170</y>
+         <width>48</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit { border: 1px solid gray }</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="maximum">
+        <number>500</number>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="firstDim1">
+       <property name="geometry">
+        <rect>
+         <x>225</x>
+         <y>50</y>
+         <width>68</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit { border: 1px solid gray }</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="firstDim2">
+       <property name="geometry">
+        <rect>
+         <x>225</x>
+         <y>80</y>
+         <width>68</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit { border: 1px solid gray }</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="firstDim3">
+       <property name="geometry">
+        <rect>
+         <x>225</x>
+         <y>110</y>
+         <width>68</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit { border: 1px solid gray }</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="firstDim4">
+       <property name="geometry">
+        <rect>
+         <x>225</x>
+         <y>140</y>
+         <width>68</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit { border: 1px solid gray }</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="firstDim5">
+       <property name="geometry">
+        <rect>
+         <x>225</x>
+         <y>170</y>
+         <width>68</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit { border: 1px solid gray }</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="secondDim5">
+       <property name="geometry">
+        <rect>
+         <x>318</x>
+         <y>170</y>
+         <width>68</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit { border: 1px solid gray }</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="secondDim2">
+       <property name="geometry">
+        <rect>
+         <x>318</x>
+         <y>80</y>
+         <width>68</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit { border: 1px solid gray }</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="secondDim3">
+       <property name="geometry">
+        <rect>
+         <x>318</x>
+         <y>110</y>
+         <width>68</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit { border: 1px solid gray }</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="secondDim4">
+       <property name="geometry">
+        <rect>
+         <x>318</x>
+         <y>140</y>
+         <width>68</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit { border: 1px solid gray }</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="secondDim1">
+       <property name="geometry">
+        <rect>
+         <x>318</x>
+         <y>50</y>
+         <width>68</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit { border: 1px solid gray }</string>
+       </property>
+       <property name="wrapping">
+        <bool>false</bool>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="hq1">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>50</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>High Quality</string>
+       </property>
+       <property name="tristate">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="hq2">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>80</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>High Quality</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="hq3">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>110</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>High Quality</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="hq4">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>140</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>High Quality</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="hq5">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>170</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>9</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>High Quality</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelQuant">
+       <property name="geometry">
+        <rect>
+         <x>134</x>
+         <y>30</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>7</pointsize>
+         <weight>50</weight>
+         <italic>true</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(254, 204, 102);</string>
+       </property>
+       <property name="text">
+        <string>Quantity:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelDim1">
+       <property name="geometry">
+        <rect>
+         <x>227</x>
+         <y>30</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>7</pointsize>
+         <weight>50</weight>
+         <italic>true</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(254, 204, 102);</string>
+       </property>
+       <property name="text">
+        <string>Size in mm:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelDim2">
+       <property name="geometry">
+        <rect>
+         <x>316</x>
+         <y>30</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>7</pointsize>
+         <weight>50</weight>
+         <italic>true</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(254, 204, 102);</string>
+       </property>
+       <property name="text">
+        <string>2nd Dimension:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelQuant_2">
+       <property name="geometry">
+        <rect>
+         <x>13</x>
+         <y>30</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>7</pointsize>
+         <weight>50</weight>
+         <italic>true</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(254, 204, 102);</string>
+       </property>
+       <property name="text">
+        <string>Shape:</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="calculatePB">
+      <property name="geometry">
+       <rect>
+        <x>535</x>
+        <y>115</y>
+        <width>90</width>
+        <height>128</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Calculate</string>
+      </property>
+      <property name="shortcut">
+       <string>Enter, Return</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="resetPB">
+      <property name="geometry">
+       <rect>
+        <x>535</x>
+        <y>247</y>
+        <width>90</width>
+        <height>55</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Corbel</family>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #76797C;</string>
+      </property>
+      <property name="text">
+       <string>Reset</string>
+      </property>
+      <property name="shortcut">
+       <string>C</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Conversions</string>
+     </attribute>
+     <widget class="QGroupBox" name="weightConvert">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>291</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Georgia</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+    color: rgb(239, 151, 9);
+}</string>
+      </property>
+      <property name="title">
+       <string>Weights</string>
+      </property>
+      <widget class="QLineEdit" name="intakeWeight">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>71</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+        </font>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="dwtIntake">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>35</y>
+         <width>55</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>DWT</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="ouncesIntake">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>35</y>
+         <width>68</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Ounces</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="gramsIntake">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>35</y>
+         <width>68</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Grams</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>60</y>
+         <width>141</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::ClickFocus</enum>
+       </property>
+       <property name="text">
+        <string>Calculate</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="dwtVal">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>70</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(254, 204, 102);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ozVal">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>90</y>
+         <width>70</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(254, 204, 102);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="gVal">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>70</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(254, 204, 102);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="dwtUnit">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>70</y>
+         <width>31</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(254, 204, 102);</string>
+       </property>
+       <property name="text">
+        <string>dwt</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ozUnit">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>90</y>
+         <width>31</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(254, 204, 102);</string>
+       </property>
+       <property name="text">
+        <string>ozt</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="gUnit">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>110</y>
+         <width>31</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(254, 204, 102);</string>
+       </property>
+       <property name="text">
+        <string>g</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="tapSize">
+      <property name="geometry">
+       <rect>
+        <x>479</x>
+        <y>0</y>
+        <width>131</width>
+        <height>257</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Georgia</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+	color: rgb(48, 138, 255);
+}
+</string>
+      </property>
+      <property name="title">
+       <string>Stem Tap Size</string>
+      </property>
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>45</y>
+         <width>111</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>111</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(199, 239, 255);</string>
+       </property>
+       <property name="text">
+        <string>Tap 0 = 1.90 mm</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>47</y>
+         <width>111</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(199, 239, 255);</string>
+       </property>
+       <property name="text">
+        <string>Tap 1 = 1.80 mm</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="Line" name="line_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>62</y>
+         <width>111</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>64</y>
+         <width>111</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(199, 239, 255);</string>
+       </property>
+       <property name="text">
+        <string>Tap 2 = 1.70 mm</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="Line" name="line_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>79</y>
+         <width>111</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>81</y>
+         <width>111</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(199, 239, 255);</string>
+       </property>
+       <property name="text">
+        <string>Tap 3 = 1.60 mm</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>115</y>
+         <width>111</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(199, 239, 255);</string>
+       </property>
+       <property name="text">
+        <string>Tap 5 = 1.40 mm</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>98</y>
+         <width>111</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(199, 239, 255);</string>
+       </property>
+       <property name="text">
+        <string>Tap 4 = 1.50 mm</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>132</y>
+         <width>111</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(199, 239, 255);</string>
+       </property>
+       <property name="text">
+        <string>Tap 6 = 1.30 mm</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="Line" name="line_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>147</y>
+         <width>111</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>130</y>
+         <width>111</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>149</y>
+         <width>111</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(199, 239, 255);</string>
+       </property>
+       <property name="text">
+        <string>Tap 7 = 1.20 mm</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="Line" name="line_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>113</y>
+         <width>111</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>96</y>
+         <width>111</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>166</y>
+         <width>111</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(199, 239, 255);</string>
+       </property>
+       <property name="text">
+        <string>Tap 8 = 1.10 mm</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>183</y>
+         <width>111</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(199, 239, 255);</string>
+       </property>
+       <property name="text">
+        <string>Tap 9 = 1.00 mm</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>111</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(199, 239, 255);</string>
+       </property>
+       <property name="text">
+        <string>Tap 10 = 0.90 mm</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>217</y>
+         <width>111</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(199, 239, 255);</string>
+       </property>
+       <property name="text">
+        <string>Tap 11 = 0.80 mm</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>234</y>
+         <width>111</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(199, 239, 255);</string>
+       </property>
+       <property name="text">
+        <string>Tap 12 = 0.70 mm</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="Line" name="line_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>164</y>
+         <width>111</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>181</y>
+         <width>111</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>198</y>
+         <width>111</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>215</y>
+         <width>111</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_12">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>232</y>
+         <width>111</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>147</y>
+        <width>291</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Georgia</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+   
+	color: rgb(255, 222, 34);
+}</string>
+      </property>
+      <property name="title">
+       <string>Ring Blanks</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <widget class="QLabel" name="label_44">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>20</y>
+         <width>47</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>7</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 249, 179);</string>
+       </property>
+       <property name="text">
+        <string>Ring Size:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="ringBlankIntake">
+       <property name="geometry">
+        <rect>
+         <x>11</x>
+         <y>39</y>
+         <width>81</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="ringBlankCalculate">
+       <property name="geometry">
+        <rect>
+         <x>108</x>
+         <y>33</y>
+         <width>78</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <italic>true</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::NoFocus</enum>
+       </property>
+       <property name="text">
+        <string>Calculate</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_43">
+       <property name="geometry">
+        <rect>
+         <x>233</x>
+         <y>35</y>
+         <width>31</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 249, 179);</string>
+       </property>
+       <property name="text">
+        <string>mm</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ringBlankLabel">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>35</y>
+         <width>40</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 249, 179);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_45">
+       <property name="geometry">
+        <rect>
+         <x>233</x>
+         <y>50</y>
+         <width>35</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>10</pointsize>
+         <italic>true</italic>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 249, 179);</string>
+       </property>
+       <property name="text">
+        <string>inches</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ringBlankInch">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>50</y>
+         <width>40</width>
+         <height>13</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Corbel</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 249, 179);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="tapSize_2">
+      <property name="geometry">
+       <rect>
+        <x>325</x>
+        <y>0</y>
+        <width>131</width>
+        <height>257</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Georgia</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+    color: rgb(64, 128, 2);
+}
+</string>
+      </property>
+      <property name="title">
+       <string>Gauge to MM</string>
+      </property>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="geometry">
+        <rect>
+         <x>1</x>
+         <y>25</y>
+         <width>129</width>
+         <height>230</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustIgnored</enum>
+       </property>
+       <property name="widgetResizable">
+        <bool>false</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>112</width>
+          <height>759</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label_14">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>11</height>
+            </size>
+           </property>
+           <property name="sizeIncrement">
+            <size>
+             <width>0</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>10 ga = 2.95 mm</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_14">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_15">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>11 ga = 2.31 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_16">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_16">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>12 ga = 2.06 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_15">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_17">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>13 ga = 1.83 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_19">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_31">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>14 ga = 1.63 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_31">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_33">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>15 ga = 1.45 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_39">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_38">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>16 ga = 1.29 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_38">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_40">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>17 ga = 1.14 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_37">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_41">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>18 ga = 1.02 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_40">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_39">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>19 ga = 0.91 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_35">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_36">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>20 ga = 0.81 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_34">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_35">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>21 ga = 0.71 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_33">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_34">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>22 ga = 0.64 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_36">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_37">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>23 ga = 0.58 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_29">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_32">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>24 ga = 0.51 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_30">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_30">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>25 ga = 0.46 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_32">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_19">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>26 ga = 0.40 mm</string>
+           </property>
+           <property name="scaledContents">
+            <bool>false</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_17">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_21">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>27 ga = 0.36 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_27">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_26">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>28 ga = 0.32 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_25">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_29">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>29 ga = 0.28 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_26">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_28">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>30 ga = 0.25 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_28">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_27">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>31 ga = 0.23 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_22">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_24">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>32 ga = 0.20 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_21">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_25">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>33 ga = 0.18 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_23">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_23">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>34 ga = 0.16 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_24">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_22">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>35 ga = 0.14 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_18">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_20">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>36 ga = 0.13 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_20">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_18">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>37 ga = 0.12 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line_13">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>1</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_42">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>13</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(200, 250, 145);</string>
+           </property>
+           <property name="text">
+            <string>38 ga = 0.10 mm</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <attribute name="title">
+      <string>Parts Finder</string>
+     </attribute>
+     <widget class="QListWidget" name="listWidget">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>141</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::ExtendedSelection</enum>
+      </property>
+      <property name="movement">
+       <enum>QListView::Static</enum>
+      </property>
+      <property name="isWrapping" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="layoutMode">
+       <enum>QListView::SinglePass</enum>
+      </property>
+      <property name="viewMode">
+       <enum>QListView::ListMode</enum>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>Bulova</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Citizen</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Invicta</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QGroupBox" name="partsGroup">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>0</y>
+        <width>301</width>
+        <height>300</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Georgia</family>
+        <pointsize>9</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 10px;
+	color: rgb(48, 138, 255);
+}
+</string>
+      </property>
+      <property name="title">
+       <string>&lt;-----  Choose a Brand</string>
+      </property>
+      <widget class="QTextBrowser" name="textBrowser">
+       <property name="geometry">
+        <rect>
+         <x>5</x>
+         <y>31</y>
+         <width>291</width>
+         <height>261</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
