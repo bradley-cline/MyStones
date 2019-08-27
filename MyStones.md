@@ -25,4 +25,5 @@ There are 4 useful conversions in the conversions tab of the application.
 
 ### Parts Finder
 ![Parts Finder](https://github.com/bradley-cline/MyStones/blob/master/ISAWA/MD%20Pictures/Parts%20Finder%20Tab.PNG "Parts Finder")
+
 Currently disabled. Acts as a digital rolodex, allowing the user to search by watch brand to find parts. Lists contact information and account numbers for vendors, as well as information that is useful to have when dealing with the vendors (which agent to talk to, what parts are and are not available, etc.)
