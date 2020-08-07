@@ -1,9 +1,9 @@
-# MyStones 
+# UtiliJewel 
 A jewelry merchandise pricing application created for the four Fast-Fix Jewelry and Watch Repairs locations in Tennessee. 
 _by Bradley Cline - 2018_
 
 ## Usage
-**MyStones** currently have 3 functions: 
+**UtiliJewel** currently have 3 functions: 
 - To price new jewelry items based off their precious metal and diamond values, 
 - To provide quick access to common conversions for the jewelry and watch repair industry
 - To provide a digital, quick access rolodex of vendor information for locating watch parts and components
